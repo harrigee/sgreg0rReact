@@ -208,6 +208,7 @@ html {
 /* Wrapper for item list */
 .bm-item-list {
   color: #ff00ff;
+  padding-top:48px;
 }
 
 /* Styling of overlay */
