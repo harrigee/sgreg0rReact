@@ -1,8 +1,8 @@
 
-# sgreg0r ReactNative!
+# sgreg0r React!
 
 
-### This project is my personal react native playground
+### This project is my personal react playground
 
 Here is a teddy bear:
 
