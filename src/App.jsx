@@ -49,8 +49,9 @@ class App extends React.Component {
       <div id="page-wrap">
         <Header incrementCheers={ this.incrementCheers } title={ this.state.title }/>
         <Router history={ hashHistory }>
-          <Route path='/chuck' component={() => ( <Chuck/> )} />
+          <Route path='/' component={() => ( <Bears cheers={ this.state.cheers }/> )} />
           <Route path='/bears' component={() => ( <Bears cheers={ this.state.cheers }/> )} />
+          <Route path='/chuck' component={() => ( <Chuck/> )} />
         </Router>
       </div>
         <Footer creator={ this.state.creator }/>

@@ -40,7 +40,6 @@ class Chuck extends React.Component {
             borderColor="white"
             borderWidth={5}
             borderRadius="50%"/>
-          }
         </div> : null }
         <div className="Content">
           {this.state.quote}
