@@ -5,7 +5,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="Footer">
-        <a target="blank" href="https://twitter.com/boongame">
+        <a target="blank" href="https://twitter.com/sgreg0r">
           <div className="Footer-image">
             <img className="Footer-logo" src={twitterImage} alt="footer"></img>
           </div>
