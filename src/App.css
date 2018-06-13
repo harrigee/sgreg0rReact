@@ -27,22 +27,6 @@ html {
   cursor: pointer;
 }
 
-.InstagramPicture {
-  opacity: 0.99;
-  border-radius: 50%;
-  width: 128px;
-  height: 128px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.InstagramPicture:hover {
-  transform: scale(1.5);
-  z-index: auto;
-}
-
 .Header-Logo:hover {
   animation:stop;
   -webkit-filter: blur(5px); filter: blur(5px);
@@ -51,16 +35,16 @@ html {
 
 .Header-Logo:hover  {
   animation:stop;
-  -webkit-filter: blur(5px); filter: blur(5px);
-  transform: scale(1.3);
+  -webkit-filter: blur(3px); filter: blur(3px);
+  transform: scale(1.2);
 }
 
 @keyframes App-logo-spin {
     from {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
     to {
-        transform: scale(0.9);
+        transform: scale(0.95);
     }
 }
 
@@ -133,8 +117,8 @@ html {
 
 .PedoBear:hover {
   background-color: rgba(255,0,255,0.2);
-  -webkit-filter: blur(5px); filter: blur(5px);
-  transform: scale(1);
+  -webkit-filter: blur(1px); filter: blur(1px);
+  transform: scale(0.8);
   animation: stop;
 }
 
@@ -151,9 +135,22 @@ html {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 104px;
+    height: 112px;
     width: 100%;
     overflow:hidden;
+}
+
+.FooterRow {
+  display: table;
+  width: 240px;
+  table-layout: fixed; /*Optional*/
+  border-spacing: 10px; /*Optional*/
+  margin: 0 auto;
+  position: relative;
+}
+
+.FooterColumn {
+  display: table-cell;
 }
 
 .Footer-image {
@@ -161,6 +158,7 @@ html {
     padding-bottom: 24px;
     position:relative;
     top:8px;
+    height: 24px;
     cursor: pointer;
 }
 
@@ -184,8 +182,8 @@ html {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 36px;
-  width: 36px;
+  height: 48px;
+  width: 48px;
 }
 
 /* Color/shape of close button cross */
@@ -218,10 +216,11 @@ html {
 
 .menu-item {
   color:rgba(255, 255, 255, 1);
-  padding:8px;
-  font-size: 28px;
+  margin: 4px;
+  font-size: 44px;
   font-weight:bold;
   text-decoration: none;
+  transform: rotate(20deg);
 }
 
 .activity-indicator {

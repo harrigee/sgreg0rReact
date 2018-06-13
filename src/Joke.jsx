@@ -1,7 +1,7 @@
 import React from 'react';
 import ActivityIndicator from 'react-activity-indicator'
 
-class Chuck extends React.Component {
+class Joke extends React.Component {
 
   constructor(props) {
     super(props);
@@ -11,15 +11,16 @@ class Chuck extends React.Component {
     };
   }
 
-  componentWillMount () {
+  componentWillMount() {
     this.getQuote();
   }
 
   getQuote = () => {
-    fetch('https://api.chucknorris.io/jokes/random')
+    fetch('https://icanhazdadjoke.com/', { headers: { 'Accept': 'application/json' }})
       .then((response) => response.json())
       .then((responseJson) => {
-        this.setState({quote:responseJson.value, loading: false});
+        console.log(responseJson);
+        this.setState({ quote: responseJson.joke, loading: false });
       })
       .catch((error) => {
         console.error(error);
@@ -29,9 +30,9 @@ class Chuck extends React.Component {
   render() {
     return (
       <div>
-        { this.state.loading ? <div>
+        {this.state.loading ? <div>
           <ActivityIndicator
-            id = "activityIndicator"
+            id="activityIndicator"
             number={3}
             diameter={32}
             borderWidth={1}
@@ -39,8 +40,8 @@ class Chuck extends React.Component {
             activeColor="#ffffff"
             borderColor="white"
             borderWidth={5}
-            borderRadius="50%"/>
-        </div> : null }
+            borderRadius="50%" />
+        </div> : null}
         <div className="Content">
           {this.state.quote}
         </div>
@@ -49,4 +50,4 @@ class Chuck extends React.Component {
   }
 }
 
-export default Chuck;
+export default Joke;
