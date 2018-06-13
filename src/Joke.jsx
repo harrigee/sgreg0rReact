@@ -35,7 +35,6 @@ class Joke extends React.Component {
             id="activityIndicator"
             number={3}
             diameter={32}
-            borderWidth={1}
             duration={100}
             activeColor="#ffffff"
             borderColor="white"
